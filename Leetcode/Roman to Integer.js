@@ -3,3 +3,4 @@ const romanToInt = s => {
     const sVal = s.split('').map(s => roman[s])
     return sVal.reduceRight((a, c, i, arr) => (c < arr[i + 1]) ? a - c : a + c)
 }
+
